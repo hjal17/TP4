@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:defaultValue="hjal"
+        android:selectAllOnFocus="true"
+        android:key="title"
+        android:singleLine="true"
+        android:summary="app name"
+        android:title="Titre de l'application"
+        />
+    <CheckBoxPreference
+        android:selectAllOnFocus="true"
+        android:key="useLoginPassword"
+        android:singleLine="true"
+        android:title="Utiliser un mot de passe"
+        />
+    <EditTextPreference
+        android:dependency="useLoginPassword"
+        android:selectAllOnFocus="true"
+        android:key="login"
+        android:singleLine="true"
+        android:summary="Login d'authentification"
+        android:title="login"
+        />
+    <EditTextPreference
+        android:dependency="useLoginPassword"
+        android:selectAllOnFocus="true"
+        android:key="password"
+        android:singleLine="true"
+        android:summary="Votre mot de passe"
+        android:title="password"
+        />
+
+
+
+</PreferenceScreen>
